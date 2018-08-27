@@ -42,7 +42,7 @@ public class SeleniumTestMethods {
 		return element.getText();
 	}
 	public void login() {
-		logInAddUserAndPass("mjukvarutestare2@mailinator.com","mjukvarutestare");
+		logInAddUserAndPass("mjukvarutestare4@mailinator.com","mjukvarutestare");
 		clickByClassName("btn-success");
 	}
 
