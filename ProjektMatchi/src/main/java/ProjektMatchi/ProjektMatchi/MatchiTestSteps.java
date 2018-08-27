@@ -50,7 +50,7 @@ public class MatchiTestSteps {
 		stm.login();
 	}
 
-	@Given("^have chosen a sport hall\\.$")
+	@Given("^have chosen a sport hall$")
 	public void have_chosen_a_sport_hall() throws Throwable {
 	    stm.goToPage("http://beta1.matchi.se/facilities/honots");
 	}

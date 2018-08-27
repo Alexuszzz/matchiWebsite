@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="2" tests="2" time="45.492052">
+<testcase classname="As customer I want to be able to book one or several courts." name="Book a court." time="23.163646">
+<skipped><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................passed
+When I search for available courts..........................................passed
+And chosen a specific court.................................................passed
+And chosen a specific time..................................................passed
+Then I can book a court.....................................................pending
+]]></skipped>
+</testcase>
+<testcase classname="As customer I want to be able to book one or several courts." name="Book several courts" time="22.328406">
+<skipped><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................passed
+When I search for available courts..........................................passed
+And click on the "Boka flera" button........................................pending
+And chosen a specific court.................................................skipped
+And chosen a specific time..................................................skipped
+Then I can book more than one court.........................................skipped
+]]></skipped>
+</testcase>
+</testsuite>
