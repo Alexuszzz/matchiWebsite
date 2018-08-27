@@ -40,7 +40,10 @@ public class MatchiTestSteps {
 	@Then("^I am logged in$")
 	public void i_am_logged_in() throws Throwable {
 	   if(!stm.getTextByXpath("//*[@id=\"wrap-content\"]/section[1]/div/div/div/div[1]/div[1]/div[2]/h4/a").equals("Mjuk Varutestare")) {
+		   stm.quitWebDriver();
 		   throw new Exception();
+	   }else {
+		   stm.quitWebDriver();
 	   }
 	}
 
@@ -112,11 +115,11 @@ public class MatchiTestSteps {
 	public void i_see_the_available_courts_for_that_time() throws Throwable {
 	  			
 		if (!stm.getTextByXpath("//*[@class=\"list-group-item\"]/h6").contains("Tillgängliga tider")) {
-						
+			stm.quitWebDriver();
 			throw new Exception();
 		} else {
 			
-			stm.closeWebDriver();
+			stm.quitWebDriver();
 		}	   
 	}
 		
