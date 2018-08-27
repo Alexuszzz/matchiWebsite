@@ -1,4 +1,4 @@
-package ProjektMachi.Machi;
+package ProjektMatchi.ProjektMatchi;
 
 import java.util.concurrent.TimeUnit;
 

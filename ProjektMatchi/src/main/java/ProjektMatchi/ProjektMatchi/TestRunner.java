@@ -1,4 +1,4 @@
-package MimicServiceProject.MimicService;
+package ProjektMatchi.ProjektMatchi;
 
 import org.junit.runner.RunWith;
 
