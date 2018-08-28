@@ -87,8 +87,15 @@ public class SeleniumTestMethods {
 		elementToBeClickable(By.xpath("//*[@id=\"facilities-result\"]/div/div[1]/div/div[1]/div[1]/div/div[2]/h3/a")));
 		element.click();
 	}
-	
-	
+ 	
+	public void delay(int milliseconds) {
+		try {
+			Thread.sleep(milliseconds);
+		} catch (InterruptedException e) { 
+			
+		}
+    }
+				
 	public void closeWebDriver() {
 
 		webDriver.close();
