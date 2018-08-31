@@ -1,7 +1,10 @@
 package ProjektMatchi.ProjektMatchi;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
@@ -70,7 +73,7 @@ public class MatchiTestSteps {
 
 	@When("^chosen a specific time$")
 	public void chosen_a_specific_time() throws Throwable {
-	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[8]");
+	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[10]");
 	}
 
 	@Then("^I can book a court$")
@@ -80,7 +83,7 @@ public class MatchiTestSteps {
 		}else {
 		stm.delay(1500);
 		stm.clickByClassName("btn-success");
-		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[8]");
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[10]");
 		stm.delay(1500);
 		stm.clickByClassName("btn-danger");
 		stm.quitWebDriver();
@@ -89,12 +92,19 @@ public class MatchiTestSteps {
 
 	
 
-	@When("^click on the \"([^\"]*)\" button$")
-	public void click_on_the_button(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	@When("^click on the Boka flera button$")
+	public void click_on_the_button() throws Throwable {
+	    stm.clickByClassName("btn-xs");
 	}
-
+	
+	@When("^choose three court times$")
+	public void choose_three_court_times() throws Throwable {
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[10]");
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[11]");
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[3]/td[2]/table/tbody/tr/td[12]");
+		stm.clickById("block-book");
+	}
+	
 	@Then("^I can book more than one court$")
 	public void i_can_book_more_than_one_court() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
