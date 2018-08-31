@@ -54,6 +54,10 @@ public class SeleniumTestMethods {
 		WebElement element = webDriver.findElement(By.cssSelector(cssSelector));
 		element.click();
 	}
+	public void clickById(String id) {
+		WebElement element = webDriver.findElement(By.id(id));
+		element.click();
+	}
 	
 	public void enterSearchTextXpath(String text, String xpath) {
 		clickByXPath(xpath);

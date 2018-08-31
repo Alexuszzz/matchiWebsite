@@ -18,7 +18,7 @@ public class MatchiTestSteps {
 	
 	@Given("^I am on the Machi site$")
 	public void i_am_on_the_Machi_site() throws Throwable {
-	    stm.goToPage("http://beta1.matchi.se");
+	    stm.goToPage("https://beta1.matchi.se");
 	}
 
 	@Given("^I have not logged in$")
@@ -49,13 +49,13 @@ public class MatchiTestSteps {
 
 	@Given("^I am logged in to Matchi$")
 	public void i_am_logged_in_to_Matchi() throws Throwable {
-	    stm.goToPage("http://beta1.matchi.se");
+	    stm.goToPage("https://beta1.matchi.se");
 		stm.login();
 	}
 
 	@Given("^have chosen a sport hall$")
 	public void have_chosen_a_sport_hall() throws Throwable {
-	    stm.goToPage("http://beta1.matchi.se/facilities/honots");
+	    stm.goToPage("https://beta1.matchi.se/facilities/honots");
 	}
 
 	@When("^I search for available courts$")
@@ -75,8 +75,16 @@ public class MatchiTestSteps {
 
 	@Then("^I can book a court$")
 	public void i_can_book_a_court() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		if(!stm.getTextByXpath("//*[@id=\"userBookingModal\"]/div[1]/div/div[2]/h1").contains("Tack för din bokning!")) {
+			throw new Exception();
+		}else {
+		stm.delay(1500);
+		stm.clickByClassName("btn-success");
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[8]");
+		stm.delay(1500);
+		stm.clickByClassName("btn-danger");
+		stm.quitWebDriver();
+		}
 	}
 
 	
@@ -144,6 +152,11 @@ public class MatchiTestSteps {
 	public void can_choose_the_clicked_Sport_Hall_for_booking() throws Throwable {
 	    //stm.clickByXPath("//*[@id=\"facilities-result\"]/div/div[1]/div/div[1]/div[1]/div/div[2]/h3/a");
 	    
+	}
+	@When("^I click book$")
+	public void i_click_book() throws Throwable {
+		stm.delay(1500);
+	    stm.clickById("btnSubmit");
 	}
 }
 
