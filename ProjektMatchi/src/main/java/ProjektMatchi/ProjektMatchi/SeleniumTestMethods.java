@@ -13,10 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SeleniumTestMethods {
 	
 	private WebDriver webDriver;
-	
+	private WebDriverWait wait;
 	public SeleniumTestMethods() {
 		System.setProperty("webdriver.chrome.driver", "chromedriver/chromedriver.exe");
 		webDriver = new ChromeDriver();
+		wait = new WebDriverWait(webDriver,20);
 		webDriver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		webDriver.manage().window().maximize();
 	}
@@ -34,7 +35,7 @@ public class SeleniumTestMethods {
 		element.sendKeys(password);
 	}
 	public void clickByClassName(String className) {
-		WebElement element = webDriver.findElement(By.className(className));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.className(className)));
 		element.click();
 	}
 	public String getTextByXpath(String xpath) {
@@ -61,7 +62,7 @@ public class SeleniumTestMethods {
 		element.click();
 	}
 	public void clickById(String id) {
-		WebElement element = webDriver.findElement(By.id(id));
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(id)));
 		element.click();
 	}
 	
