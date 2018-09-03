@@ -1,6 +1,9 @@
 package ProjektMatchi.ProjektMatchi;
 
 
+
+
+
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -10,7 +13,7 @@ public class MatchiTestSteps {
 	public MatchiTestSteps() {
 	}
 	SeleniumTestMethods stm = new SeleniumTestMethods();
-	 
+	
 	
 	// Userstory6: Log in to Machi website//
 	
@@ -178,12 +181,7 @@ public class MatchiTestSteps {
 		stm.enterSearchTextXpath(arg1, "//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[1]/div/input");
 		stm.enterSearchTextXpath(arg2, "//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[2]/input");
 		stm.clickByXPath("//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[3]/select/option["+(Integer.parseInt(arg3)+1)+"]");
-		
-		stm.clickByXPath("//*[@id=\"expiryYear\"]/option[1]");
-		
-		
-		stm.clickByXPath("//*[@id=\"expiryYear\"]/option[4]");
-		
+		stm.selectYear(arg4);	
 		stm.enterSearchTextXpath(arg5,"//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[5]/div/input");
 		stm.clickByXPath("//*[@id=\"adyen-encrypted-form\"]/div[2]/input");
 		
@@ -195,11 +193,7 @@ public class MatchiTestSteps {
 		stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");
 	}
 
-	@Then("^I get conformation from Matchi in a text window$")
-	public void i_get_conformation_from_Matchi_in_a_text_window() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+	
 
 
 }

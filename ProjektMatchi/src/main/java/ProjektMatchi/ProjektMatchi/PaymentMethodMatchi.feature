@@ -9,7 +9,7 @@ And chosen a specific time
 When I choose Nytt konto-/kreditkort
 And I enter card details: "2223000048410010", "Mjukvaru Testare", "10", "2020", "737" 
 Then I can finalize my booking
-And I get conformation from Matchi in a text window  
+
 
 
 

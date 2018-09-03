@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumTestMethods {
@@ -97,6 +98,13 @@ public class SeleniumTestMethods {
 		WebElement element = wait.until(ExpectedConditions.
 		elementToBeClickable(By.xpath("//*[@id=\"facilities-result\"]/div/div[1]/div/div[1]/div[1]/div/div[2]/h3/a")));
 		element.click();
+	}
+	
+	
+	public void selectYear( String year) {
+		
+		Select yearSelect = new Select(webDriver.findElement(By.id("expiryYear")));
+		yearSelect.selectByValue(year);
 	}
  	
 	public void delay(int milliseconds) {
