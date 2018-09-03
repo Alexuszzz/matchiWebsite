@@ -47,7 +47,13 @@ public class SeleniumTestMethods {
 	}
 
 	public void clickByXPath(String xpath) {
-		WebElement element = webDriver.findElement(By.xpath(xpath));
+		//WebElement element = webDriver.findElement(By.xpath(xpath));
+		//element.click();
+		
+		WebDriverWait wait = new WebDriverWait(webDriver,30);
+		
+		WebElement element = wait.until(ExpectedConditions.
+		elementToBeClickable(By.xpath(xpath)));
 		element.click();
 	}
 	public void clickByCss(String cssSelector) {
