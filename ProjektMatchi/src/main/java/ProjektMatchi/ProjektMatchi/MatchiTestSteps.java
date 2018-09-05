@@ -1,21 +1,13 @@
 package ProjektMatchi.ProjektMatchi;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class MatchiTestSteps {
-	public MatchiTestSteps() {
-	}
+	
 	SeleniumTestMethods stm = new SeleniumTestMethods();
-	 
+	
 	
 	// Userstory6: Log in to Machi website//
 	
@@ -187,7 +179,31 @@ public class MatchiTestSteps {
 		stm.delay(1500);
 	    stm.clickById("btnSubmit");
 	}
+	//Payment Method 
+	
+	@When("^I choose Nytt konto-/kreditkort$")
+	public void i_choose_Nytt_konto_kreditkort() throws Throwable {
+	    stm.clickByXPath("//*[@id=\"confirmForm\"]/div[2]/div[3]/div[2]/div[2]/div/label");
+	    stm.clickByXPath("//*[@id=\"btnSubmit\"]");
+	}
 
+	@When("^I enter card details: \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
+	public void i_enter_card_details(String arg1, String arg2, String arg3, String arg4, String arg5) throws Throwable {
+		
+		stm.enterSearchTextXpath(arg1, "//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[1]/div/input");
+		stm.enterSearchTextXpath(arg2, "//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[2]/input");
+		stm.clickByXPath("//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[3]/select/option["+(Integer.parseInt(arg3)+1)+"]");
+		stm.selectYear(arg4);	
+		stm.enterSearchTextXpath(arg5,"//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[5]/div/input");
+		stm.clickByXPath("//*[@id=\"adyen-encrypted-form\"]/div[2]/input");
+		
+		
+	}
+
+	@Then("^I can finalize my booking$")
+	public void i_can_finalize_my_booking() throws Throwable {
+		stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");
+	}
 }
 
 
