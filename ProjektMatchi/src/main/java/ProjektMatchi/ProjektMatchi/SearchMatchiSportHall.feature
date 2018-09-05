@@ -6,4 +6,17 @@ Scenario: Search for Sport Hall
 	And As I click the name of the Sport Hall
 	Then Can choose the clicked Sport Hall for booking
 	
+Scenario Outline: Search for Sport Halls
+
+Given I am logged in to Matchi
+	When I enter the <name> of a Sport Hall
+	And As I click the name of the Sport Hall
+	Then Can choose the clicked Sport Hall for booking
 	
+	Examples:
+	
+	|names|
+	|"Hönö"|
+	|"Stenungsund"|
+	
+	#fungerar inte
