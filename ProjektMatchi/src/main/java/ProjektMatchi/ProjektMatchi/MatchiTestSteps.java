@@ -178,6 +178,7 @@ public class MatchiTestSteps {
 	public void i_click_book() throws Throwable {
 		stm.delay(1500);
 	    stm.clickById("btnSubmit");
+	    stm.quitWebDriver();
 	}
 	//Payment Method 
 	
@@ -203,7 +204,29 @@ public class MatchiTestSteps {
 
 	@Then("^I can finalize my booking$")
 	public void i_can_finalize_my_booking() throws Throwable {
-		stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");
+		
+		if(stm.getTextByXpath("//*[@id=\"userBookingModal\"]/div[1]/div/div[2]/h1").contains("Tack för din bokning!")) {
+			stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");
+			stm.clickByXPath("//*[@id=\"navbar-collapse\"]/ul[2]/li[3]/a");
+			stm.clickByXPath("//*[@id=\"navbar-collapse\"]/ul[2]/li[3]/ul/li[1]/a/div/div[2]/h5");
+			stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[2]/div/div[3]/a[2]");
+			stm.clickByXPath("//*[@id=\"cancelCloseBtn\"]");
+			stm.quitWebDriver();
+		
+		}
+		
+		else if(stm.getTextByXpath("//*[@id=\"userBookingModal\"]/div[1]/div/div[2]").contains("Ett problem upptäcktes")) {
+			stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");
+			stm.quitWebDriver();
+		}
+		
+		else {
+			throw new Exception();
+		}
+		
+		
+		
+		
 	}
 }
 
