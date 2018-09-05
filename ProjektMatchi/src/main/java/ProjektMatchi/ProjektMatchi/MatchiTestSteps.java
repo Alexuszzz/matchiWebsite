@@ -1,17 +1,11 @@
 package ProjektMatchi.ProjektMatchi;
 
-
-
-
-
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class MatchiTestSteps {
-	public MatchiTestSteps() {
-	}
+	
 	SeleniumTestMethods stm = new SeleniumTestMethods();
 	
 	
@@ -92,7 +86,7 @@ public class MatchiTestSteps {
 
 	@When("^click on the Boka flera button$")
 	public void click_on_the_button() throws Throwable {
-	    stm.clickByClassName("btn-xs");
+	    stm.clickByLinkText("Boka flera");
 	}
 	
 	@When("^choose three court times$")
@@ -100,13 +94,32 @@ public class MatchiTestSteps {
 		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[10]");
 		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[11]");
 		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[3]/td[2]/table/tbody/tr/td[12]");
-		stm.clickById("block-book");
+		 stm.clickByLinkText("Boka (3)");
 	}
 	
 	@Then("^I can book more than one court$")
 	public void i_can_book_more_than_one_court() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		if(!stm.getTextByXpath("//*[@id=\"userBookingModal\"]/div[1]/div/div[2]/h1").contains("Tack för din bokning!")) {
+			throw new Exception();
+		}else {
+		stm.delay(1500);
+		stm.clickByClassName("btn-success");
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[10]");
+		stm.delay(1500);
+		stm.clickByClassName("btn-danger");
+		stm.clickById("cancelCloseBtn");
+		stm.delay(1500);
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[11]");
+		stm.delay(1500);
+		stm.clickByClassName("btn-danger");
+		stm.clickById("cancelCloseBtn");
+		stm.delay(1500);
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[3]/td[2]/table/tbody/tr/td[12]");
+		stm.delay(1500);
+		stm.clickByClassName("btn-danger");
+		stm.clickById("cancelCloseBtn");
+		stm.quitWebDriver();
+		}
 	}
 
 	
@@ -166,7 +179,6 @@ public class MatchiTestSteps {
 		stm.delay(1500);
 	    stm.clickById("btnSubmit");
 	}
-	
 	//Payment Method 
 	
 	@When("^I choose Nytt konto-/kreditkort$")
@@ -193,10 +205,6 @@ public class MatchiTestSteps {
 	public void i_can_finalize_my_booking() throws Throwable {
 		stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");
 	}
-
-	
-
-
 }
 
 

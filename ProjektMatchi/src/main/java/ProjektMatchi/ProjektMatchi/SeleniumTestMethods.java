@@ -36,7 +36,7 @@ public class SeleniumTestMethods {
 		element.sendKeys(password);
 	}
 	public void clickByClassName(String className) {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.className(className)));
+		WebElement element = webDriver.findElement(By.className(className));
 		element.click();
 	}
 	public String getTextByXpath(String xpath) {
@@ -58,12 +58,16 @@ public class SeleniumTestMethods {
 		elementToBeClickable(By.xpath(xpath)));
 		element.click();
 	}
+	public void clickByLinkText(String linkText) {
+		WebElement element = webDriver.findElement(By.linkText(linkText));
+		element.click();
+	}
 	public void clickByCss(String cssSelector) {
 		WebElement element = webDriver.findElement(By.cssSelector(cssSelector));
 		element.click();
 	}
 	public void clickById(String id) {
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id(id)));
+		WebElement element = webDriver.findElement(By.id(id));
 		element.click();
 	}
 	
