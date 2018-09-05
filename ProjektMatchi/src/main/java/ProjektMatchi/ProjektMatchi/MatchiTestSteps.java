@@ -65,7 +65,7 @@ public class MatchiTestSteps {
 
 	@When("^chosen a specific time$")
 	public void chosen_a_specific_time() throws Throwable {
-	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[10]");
+	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[15]");
 	}
 
 	@Then("^I can book a court$")
@@ -75,7 +75,7 @@ public class MatchiTestSteps {
 		}else {
 		stm.delay(1500);
 		stm.clickByClassName("btn-success");
-		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[10]");
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[15]");
 		stm.delay(1500);
 		stm.clickByClassName("btn-danger");
 		stm.quitWebDriver();
@@ -203,6 +203,15 @@ public class MatchiTestSteps {
 	@Then("^I can finalize my booking$")
 	public void i_can_finalize_my_booking() throws Throwable {
 		stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");
+	}
+	@When("^Click visa vecka$")
+	public void click_visa_vecka() throws Throwable {
+	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[1]/div[2]/div[2]/a[2]");
+	}
+
+	@When("^I click a time later in the week$")
+	public void i_book_a_court_later_in_the_week() throws Throwable {
+		stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[7]/td[16]");
 	}
 }
 
