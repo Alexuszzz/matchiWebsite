@@ -31,21 +31,16 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "chosen a specific court",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
   "name": "chosen a specific time",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "I click book",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "I can book a court",
   "keyword": "Then "
 });
@@ -53,53 +48,46 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 16349975440,
+  "duration": 15369717473,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
 });
 formatter.result({
-  "duration": 4577319478,
+  "duration": 4643608030,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_search_for_available_courts()"
 });
 formatter.result({
-  "duration": 37344,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MatchiTestSteps.chosen_a_specific_court()"
-});
-formatter.result({
-  "duration": 54169,
+  "duration": 34061,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.chosen_a_specific_time()"
 });
 formatter.result({
-  "duration": 271377047,
+  "duration": 346479505,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_click_book()"
 });
 formatter.result({
-  "duration": 1827111933,
+  "duration": 1690217746,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_can_book_a_court()"
 });
 formatter.result({
-  "duration": 7559853351,
+  "duration": 9919466307,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 13,
+  "line": 12,
   "name": "Book several courts",
   "description": "",
   "id": "as-customer-i-want-to-be-able-to-book-one-or-several-courts.;book-several-courts",
@@ -107,42 +95,37 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "I am logged in to Matchi",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "have chosen a sport hall",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "I search for available courts",
   "keyword": "When "
 });
 formatter.step({
+  "line": 16,
+  "name": "click on the Boka flera button",
+  "keyword": "And "
+});
+formatter.step({
   "line": 17,
-  "name": "click on the \"Boka flera\" button",
+  "name": "choose three court times",
   "keyword": "And "
 });
 formatter.step({
   "line": 18,
-  "name": "chosen a specific court",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "chosen a specific time",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
   "name": "I click book",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 19,
   "name": "I can book more than one court",
   "keyword": "Then "
 });
@@ -150,45 +133,34 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 11810638899,
-  "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-C8K9OFL\u0027, ip: \u0027192.168.33.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_144\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\Marcu\\AppData\\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57490}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}\nSession ID: 6cfa0e1ce95da534f0e97f61d8ce0540\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"navbar-collapse\"]/ul[2]/li[2]/a}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat ProjektMatchi.ProjektMatchi.SeleniumTestMethods.logInAddUserAndPass(SeleniumTestMethods.java:27)\r\n\tat ProjektMatchi.ProjektMatchi.SeleniumTestMethods.login(SeleniumTestMethods.java:45)\r\n\tat ProjektMatchi.ProjektMatchi.MatchiTestSteps.i_am_logged_in_to_Matchi(MatchiTestSteps.java:53)\r\n\tat ✽.Given I am logged in to Matchi(ProjektMatchi/ProjektMatchi/BookACourt.feature:14)\r\n",
-  "status": "failed"
+  "duration": 13057289159,
+  "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4466580572,
+  "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_search_for_available_courts()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 58273,
+  "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Boka flera",
-      "offset": 14
-    }
-  ],
   "location": "MatchiTestSteps.click_on_the_button(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1815883,
+  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027ProjektMatchi.ProjektMatchi.MatchiTestSteps.click_on_the_button(String) in file:/C:/Users/Marcu/git/Matchi/ProjektMatchi/target/classes/\u0027 with pattern [^click on the Boka flera button$] is declared with 1 parameters. However, the gherkin step has 0 arguments []. \nStep: And click on the Boka flera button\r\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\r\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
+  "status": "failed"
 });
-formatter.match({
-  "location": "MatchiTestSteps.chosen_a_specific_court()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "MatchiTestSteps.chosen_a_specific_time()"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_click_book()"
@@ -202,4 +174,47 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.uri("ProjektMatchi/ProjektMatchi/LogInToMatchi.feature");
+formatter.feature({
+  "line": 1,
+  "name": "As a customer I want to log in to be able to get access to the bookingsystem",
+  "description": "",
+  "id": "as-a-customer-i-want-to-log-in-to-be-able-to-get-access-to-the-bookingsystem",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "line": 3,
+  "name": "Log in to Machi website",
+  "description": "",
+  "id": "as-a-customer-i-want-to-log-in-to-be-able-to-get-access-to-the-bookingsystem;log-in-to-machi-website",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 4,
+  "name": "I am on the Machi site",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "I have not logged in",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 6,
+  "name": "I use username \"mjukvarutestare4@mailinator.com\" and password \"mjukvarutestare\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I click the log in button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
+  "name": "I am logged in",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "MatchiTestSteps.i_am_on_the_Machi_site()"
 });
