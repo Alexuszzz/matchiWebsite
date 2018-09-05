@@ -188,6 +188,7 @@ public class MatchiTestSteps {
 		
 	}
 
+
 	@Then("^I can finalize my booking$")
 	public void i_can_finalize_my_booking() throws Throwable {
 		stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");
