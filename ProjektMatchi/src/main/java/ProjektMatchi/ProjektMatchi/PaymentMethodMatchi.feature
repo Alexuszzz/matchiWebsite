@@ -42,5 +42,5 @@ Then I can finalize my booking
 Examples:
 |card number						|first and last name			|	card month	|card year		|card CVC|
 |"2223000048410010"			|"Mjukvaru Testare"				|"10"					|"2020"				|"737"|
-|"2223000048410010"			|"Mjukvaru Testare"				|"10"					|"2020"				|"562"|
+|"2223000048410010"			|"Mjukvaru Testare"				|"10"					|"2020"				|"123"| 
 													

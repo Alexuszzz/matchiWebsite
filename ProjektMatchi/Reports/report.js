@@ -53,46 +53,50 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 8725763572,
+  "duration": 9590349190,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
 });
 formatter.result({
-  "duration": 1475510309,
+  "duration": 1425378553,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_search_for_available_courts()"
 });
 formatter.result({
-  "duration": 22655,
+  "duration": 20390,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.click_visa_vecka()"
 });
 formatter.result({
-  "duration": 410153747,
+  "duration": 181638934,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_book_a_court_later_in_the_week()"
 });
 formatter.result({
-  "duration": 803792495,
+  "duration": 702342623,
   "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "MatchiTestSteps.i_click_book()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 1729540888,
+  "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_can_book_a_court()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6579885298,
+  "status": "passed"
 });
 formatter.uri("ProjektMatchi/ProjektMatchi/Bookingcourts.feature");
 formatter.feature({
@@ -144,39 +148,43 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 7761370557,
+  "duration": 8927166209,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
 });
 formatter.result({
-  "duration": 1292467531,
+  "duration": 1570942301,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_search_for_available_courts()"
 });
 formatter.result({
-  "duration": 23787,
+  "duration": 30961,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.chosen_a_specific_time()"
 });
 formatter.result({
-  "duration": 231221311,
+  "duration": 168122303,
   "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "MatchiTestSteps.i_click_book()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 1680462959,
+  "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_can_book_a_court()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7290072160,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 12,
@@ -225,46 +233,50 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 7759311988,
+  "duration": 9270843111,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
 });
 formatter.result({
-  "duration": 1566836868,
+  "duration": 1747537891,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_search_for_available_courts()"
 });
 formatter.result({
-  "duration": 17369,
+  "duration": 30584,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.click_on_the_button()"
 });
 formatter.result({
-  "duration": 412763962,
+  "duration": 185034517,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.choose_three_court_times()"
 });
 formatter.result({
-  "duration": 461986882,
+  "duration": 602286024,
   "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "MatchiTestSteps.i_click_book()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 1706406146,
+  "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_can_book_more_than_one_court()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 19453712203,
+  "status": "passed"
 });
 formatter.uri("ProjektMatchi/ProjektMatchi/LogInToMatchi.feature");
 formatter.feature({
@@ -311,14 +323,14 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_on_the_Machi_site()"
 });
 formatter.result({
-  "duration": 5512304031,
+  "duration": 6238972286,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_have_not_logged_in()"
 });
 formatter.result({
-  "duration": 26430,
+  "duration": 37381,
   "status": "passed"
 });
 formatter.match({
@@ -335,21 +347,21 @@ formatter.match({
   "location": "MatchiTestSteps.i_use_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 1179429332,
+  "duration": 1390548251,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_click_the_log_in_button()"
 });
 formatter.result({
-  "duration": 1385885130,
+  "duration": 1563953662,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in()"
 });
 formatter.result({
-  "duration": 773768040,
+  "duration": 855119673,
   "status": "passed"
 });
 formatter.uri("ProjektMatchi/ProjektMatchi/PaymentMethodMatchi.feature");
@@ -585,35 +597,35 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 7780170674,
+  "duration": 9194151578,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
 });
 formatter.result({
-  "duration": 1189168647,
+  "duration": 1422923146,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.chosen_a_specific_court()"
 });
 formatter.result({
-  "duration": 24165,
+  "duration": 18879,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.chosen_a_specific_time()"
 });
 formatter.result({
-  "duration": 361903852,
+  "duration": 286002974,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_choose_Nytt_konto_kreditkort()"
 });
 formatter.result({
-  "duration": 1079695186,
+  "duration": 1305705507,
   "status": "passed"
 });
 formatter.match({
@@ -642,14 +654,14 @@ formatter.match({
   "location": "MatchiTestSteps.i_enter_card_details(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2755632465,
+  "duration": 2770088516,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_can_finalize_my_booking()"
 });
 formatter.result({
-  "duration": 5495755805,
+  "duration": 5808146377,
   "status": "passed"
 });
 formatter.scenario({
@@ -706,35 +718,35 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 7506965419,
+  "duration": 8701360537,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
 });
 formatter.result({
-  "duration": 1648104677,
+  "duration": 1426415012,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.chosen_a_specific_court()"
 });
 formatter.result({
-  "duration": 18879,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.chosen_a_specific_time()"
 });
 formatter.result({
-  "duration": 232198490,
+  "duration": 225733177,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_choose_Nytt_konto_kreditkort()"
 });
 formatter.result({
-  "duration": 1057294461,
+  "duration": 1288930733,
   "status": "passed"
 });
 formatter.match({
@@ -763,14 +775,14 @@ formatter.match({
   "location": "MatchiTestSteps.i_enter_card_details(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2505979178,
+  "duration": 2864750621,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_can_finalize_my_booking()"
 });
 formatter.result({
-  "duration": 2459442366,
+  "duration": 1977398402,
   "status": "passed"
 });
 formatter.uri("ProjektMatchi/ProjektMatchi/SearchMatchiNew.feature");
@@ -899,7 +911,7 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 7618581648,
+  "duration": 8619999086,
   "status": "passed"
 });
 formatter.match({
@@ -912,14 +924,14 @@ formatter.match({
   "location": "MatchiTestSteps.i_enter_the_of_a_Sport_Hall(String)"
 });
 formatter.result({
-  "duration": 2045106537,
+  "duration": 2597001028,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.as_I_click_the_name_of_the_Sport_Hall()"
 });
 formatter.result({
-  "duration": 5236377929,
+  "duration": 5723407847,
   "status": "passed"
 });
 formatter.match({
@@ -932,7 +944,7 @@ formatter.match({
   "location": "MatchiTestSteps.i_Can_click_of_Sport_Hall_for_booking(String)"
 });
 formatter.result({
-  "duration": 739623801,
+  "duration": 810662197,
   "status": "passed"
 });
 formatter.scenario({
@@ -973,7 +985,7 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 11880592394,
+  "duration": 9309559095,
   "status": "passed"
 });
 formatter.match({
@@ -986,14 +998,14 @@ formatter.match({
   "location": "MatchiTestSteps.i_enter_the_of_a_Sport_Hall(String)"
 });
 formatter.result({
-  "duration": 2248026292,
+  "duration": 2493485036,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.as_I_click_the_name_of_the_Sport_Hall()"
 });
 formatter.result({
-  "duration": 7964183457,
+  "duration": 5296055680,
   "status": "passed"
 });
 formatter.match({
@@ -1006,231 +1018,8 @@ formatter.match({
   "location": "MatchiTestSteps.i_Can_click_of_Sport_Hall_for_booking(String)"
 });
 formatter.result({
-  "duration": 737172548,
+  "duration": 863323367,
   "status": "passed"
-});
-formatter.uri("ProjektMatchi/ProjektMatchi/SearchMatchiSportHall.feature");
-formatter.feature({
-  "line": 1,
-  "name": "As a customer i want to search for a sport hall so that i can book it",
-  "description": "",
-  "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "line": 3,
-  "name": "Search for Sport Hall",
-  "description": "",
-  "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-hall",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 4,
-  "name": "I am logged in to Matchi",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "I enter the \"Hönö\" of a Sport Hall",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "As I click the name of the Sport Hall",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "Can choose the clicked Sport Hall for booking",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
-});
-formatter.result({
-  "duration": 8442516560,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Hönö",
-      "offset": 13
-    }
-  ],
-  "location": "MatchiTestSteps.i_enter_the_of_a_Sport_Hall(String)"
-});
-formatter.result({
-  "duration": 1952556617,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MatchiTestSteps.as_I_click_the_name_of_the_Sport_Hall()"
-});
-formatter.result({
-  "duration": 5142773050,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenarioOutline({
-  "line": 9,
-  "name": "Search for Sport Halls",
-  "description": "",
-  "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 11,
-  "name": "I am logged in to Matchi",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 12,
-  "name": "I enter the \u003cname\u003e of a Sport Hall",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "As I click the name of the Sport Hall",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "Can choose the clicked Sport Hall for booking",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 16,
-  "name": "",
-  "description": "",
-  "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls;",
-  "rows": [
-    {
-      "cells": [
-        "names"
-      ],
-      "line": 18,
-      "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls;;1"
-    },
-    {
-      "cells": [
-        "\"Hönö\""
-      ],
-      "line": 19,
-      "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls;;2"
-    },
-    {
-      "cells": [
-        "\"Stenungsund\""
-      ],
-      "line": 20,
-      "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls;;3"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 19,
-  "name": "Search for Sport Halls",
-  "description": "",
-  "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 11,
-  "name": "I am logged in to Matchi",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 12,
-  "name": "I enter the \u003cname\u003e of a Sport Hall",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "As I click the name of the Sport Hall",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "Can choose the clicked Sport Hall for booking",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
-});
-formatter.result({
-  "duration": 8028954770,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({
-  "location": "MatchiTestSteps.as_I_click_the_name_of_the_Sport_Hall()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenario({
-  "line": 20,
-  "name": "Search for Sport Halls",
-  "description": "",
-  "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 11,
-  "name": "I am logged in to Matchi",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 12,
-  "name": "I enter the \u003cname\u003e of a Sport Hall",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 13,
-  "name": "As I click the name of the Sport Hall",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "Can choose the clicked Sport Hall for booking",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
-});
-formatter.result({
-  "duration": 7675712240,
-  "status": "passed"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({
-  "location": "MatchiTestSteps.as_I_click_the_name_of_the_Sport_Hall()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
 });
 formatter.uri("ProjektMatchi/ProjektMatchi/SelectActivityDate.feature");
 formatter.feature({
@@ -1277,14 +1066,14 @@ formatter.match({
   "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
 });
 formatter.result({
-  "duration": 8064123007,
+  "duration": 13094203722,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_select_boka()"
 });
 formatter.result({
-  "duration": 1276875339,
+  "duration": 2166335969,
   "status": "passed"
 });
 formatter.match({
@@ -1297,21 +1086,21 @@ formatter.match({
   "location": "MatchiTestSteps.i_search_for(String)"
 });
 formatter.result({
-  "duration": 408665324,
+  "duration": 468622106,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_click_a_time()"
 });
 formatter.result({
-  "duration": 608853284,
+  "duration": 1239380073,
   "status": "passed"
 });
 formatter.match({
   "location": "MatchiTestSteps.i_see_the_available_courts_for_that_time()"
 });
 formatter.result({
-  "duration": 765269454,
+  "duration": 818486045,
   "status": "passed"
 });
 });

@@ -48,6 +48,9 @@ public class MatchiTestSteps {
 		stm.login();
 	}
 
+	
+	//user story book
+	
 	@Given("^have chosen a sport hall$")
 	public void have_chosen_a_sport_hall() throws Throwable {
 	    stm.goToPage("https://beta1.matchi.se/facilities/honots");
@@ -67,7 +70,15 @@ public class MatchiTestSteps {
 	public void chosen_a_specific_time() throws Throwable {
 	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td[15]");
 	}
-
+	
+	@When("^I click book$")
+	public void i_click_book() throws Throwable {
+		stm.delay(1500);
+	    stm.clickById("btnSubmit");	    
+	    //stm.quitWebDriver();
+	    
+	}
+	
 	@Then("^I can book a court$")
 	public void i_can_book_a_court() throws Throwable {
 		if(!stm.getTextByXpath("//*[@id=\"userBookingModal\"]/div[1]/div/div[2]/h1").contains("Tack för din bokning!")) {
@@ -156,15 +167,6 @@ public class MatchiTestSteps {
 	//User story1: Search for a sport hall
 	
 	
-	/*
-	@When("^I enter the \"([^\"]*)\" of a Sport Hall$")
-	public void i_enter_the_of_a_Sport_Hall(String arg1) throws Throwable {
-	     
-		stm.clickByXPath("//a[contains(text(),'Anläggningar')]");
-		stm.enterSearchTextXpath(arg1, "//*[@id=\"q\"]");
-		
-	}
-	*/
 	
 	@When("^I enter the \"([^\"]*)\" of a Sport Hall$")
 	public void i_enter_the_of_a_Sport_Hall(String arg1) throws Throwable {
@@ -180,17 +182,6 @@ public class MatchiTestSteps {
 	    stm.clickLink();
 	}
 
-	/*
-	@Then("^Can choose the clicked Sport Hall for booking$")
-	public void can_choose_the_clicked_Sport_Hall_for_booking() throws Throwable {
-	    //stm.clickByXPath("//*[@id=\"facilities-result\"]/div/div[1]/div/div[1]/div[1]/div/div[2]/h3/a");
-		if(stm.getTextByXpath("//*[@id=\"profile-menu\"]/div/div/div[1]/div[2]/h2").contains("Hönö Tennissällskap")) {
-			stm.quitWebDriver();
-		}else {
-			throw new Exception();
-		}
-	}
-	*/
 	
 
 	@Then("^I Can click \"([^\"]*)\" of Sport Hall for booking$")
@@ -202,17 +193,7 @@ public class MatchiTestSteps {
 		}
 	}
 
-
 	
-	/*
-	@When("^I click book$")
-	public void i_click_book() throws Throwable {
-		stm.delay(1500);
-	    stm.clickById("btnSubmit");	    
-	    stm.quitWebDriver();
-	    
-	}
-	*/
 	
 	//Payment Method 
 	
@@ -221,21 +202,8 @@ public class MatchiTestSteps {
 	    stm.clickByXPath("//*[@id=\"confirmForm\"]/div[2]/div[3]/div[2]/div[2]/div/label");
 	    stm.clickByXPath("//*[@id=\"btnSubmit\"]");
 	}
-/*
-	@When("^I enter card details: \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
-	public void i_enter_card_details(String arg1, String arg2, String arg3, String arg4, String arg5) throws Throwable {
-		
-		stm.enterSearchTextXpath(arg1, "//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[1]/div/input");
-		stm.enterSearchTextXpath(arg2, "//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[2]/input");
-		stm.clickByXPath("//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[3]/select/option["+(Integer.parseInt(arg3)+1)+"]");
-		stm.selectYear(arg4);	
-		stm.enterSearchTextXpath(arg5,"//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[5]/div/input");
-		stm.clickByXPath("//*[@id=\"adyen-encrypted-form\"]/div[2]/input");
-		
-		
-	}
-	*/
-	//scenario outline feature
+
+	//scenario outline feature payment
 	@When("^I enter card details \"([^\"]*)\" ,\"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
 	public void i_enter_card_details(String arg1, String arg2, String arg3, String arg4, String arg5) throws Throwable {
 	
