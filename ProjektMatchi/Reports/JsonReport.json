@@ -12,6 +12,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 15937040361,
               "status": "passed"
             },
@@ -647,6 +648,861 @@
           {
             "result": {
               "duration": 1979350230,
+=======
+              "duration": 9590349190,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in to Matchi",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1425378553,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "have chosen a sport hall",
+            "match": {
+              "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20390,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search for available courts",
+            "match": {
+              "location": "MatchiTestSteps.i_search_for_available_courts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181638934,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click visa vecka",
+            "match": {
+              "location": "MatchiTestSteps.click_visa_vecka()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 702342623,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click a time later in the week",
+            "match": {
+              "location": "MatchiTestSteps.i_book_a_court_later_in_the_week()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1729540888,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click book",
+            "match": {
+              "location": "MatchiTestSteps.i_click_book()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6579885298,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I can book a court",
+            "match": {
+              "location": "MatchiTestSteps.i_can_book_a_court()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Book courts by week schedual",
+    "description": "",
+    "id": "book-courts-by-week-schedual",
+    "keyword": "Feature",
+    "uri": "ProjektMatchi/ProjektMatchi/BookByTheWeek.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Book a court.",
+        "description": "",
+        "id": "as-customer-i-want-to-be-able-to-book-one-or-several-courts.;book-a-court.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8927166209,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am logged in to Matchi",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1570942301,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "have chosen a sport hall",
+            "match": {
+              "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30961,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search for available courts",
+            "match": {
+              "location": "MatchiTestSteps.i_search_for_available_courts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168122303,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "chosen a specific time",
+            "match": {
+              "location": "MatchiTestSteps.chosen_a_specific_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1680462959,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click book",
+            "match": {
+              "location": "MatchiTestSteps.i_click_book()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7290072160,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I can book a court",
+            "match": {
+              "location": "MatchiTestSteps.i_can_book_a_court()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Book several courts",
+        "description": "",
+        "id": "as-customer-i-want-to-be-able-to-book-one-or-several-courts.;book-several-courts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9270843111,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I am logged in to Matchi",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1747537891,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "have chosen a sport hall",
+            "match": {
+              "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30584,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I search for available courts",
+            "match": {
+              "location": "MatchiTestSteps.i_search_for_available_courts()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 185034517,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "click on the Boka flera button",
+            "match": {
+              "location": "MatchiTestSteps.click_on_the_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 602286024,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "choose three court times",
+            "match": {
+              "location": "MatchiTestSteps.choose_three_court_times()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1706406146,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click book",
+            "match": {
+              "location": "MatchiTestSteps.i_click_book()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19453712203,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I can book more than one court",
+            "match": {
+              "location": "MatchiTestSteps.i_can_book_more_than_one_court()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As customer I want to be able to book one or several courts.",
+    "description": "",
+    "id": "as-customer-i-want-to-be-able-to-book-one-or-several-courts.",
+    "keyword": "Feature",
+    "uri": "ProjektMatchi/ProjektMatchi/Bookingcourts.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Log in to Machi website",
+        "description": "",
+        "id": "as-a-customer-i-want-to-log-in-to-be-able-to-get-access-to-the-bookingsystem;log-in-to-machi-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6238972286,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Machi site",
+            "match": {
+              "location": "MatchiTestSteps.i_am_on_the_Machi_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37381,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have not logged in",
+            "match": {
+              "location": "MatchiTestSteps.i_have_not_logged_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1390548251,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I use username \"mjukvarutestare4@mailinator.com\" and password \"mjukvarutestare\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mjukvarutestare4@mailinator.com",
+                  "offset": 16
+                },
+                {
+                  "val": "mjukvarutestare",
+                  "offset": 63
+                }
+              ],
+              "location": "MatchiTestSteps.i_use_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1563953662,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the log in button",
+            "match": {
+              "location": "MatchiTestSteps.i_click_the_log_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 855119673,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a customer I want to log in to be able to get access to the bookingsystem",
+    "description": "",
+    "id": "as-a-customer-i-want-to-log-in-to-be-able-to-get-access-to-the-bookingsystem",
+    "keyword": "Feature",
+    "uri": "ProjektMatchi/ProjektMatchi/LogInToMatchi.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 44,
+        "name": "Payment",
+        "description": "",
+        "id": "as-a-customer-i-want-to-be-able-choose-different-payment-methods-for-my-booking.;payment;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9194151578,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am logged in to Matchi",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1422923146,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "have chosen a sport hall",
+            "match": {
+              "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18879,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "chosen a specific court",
+            "match": {
+              "location": "MatchiTestSteps.chosen_a_specific_court()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286002974,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "chosen a specific time",
+            "match": {
+              "location": "MatchiTestSteps.chosen_a_specific_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1305705507,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I choose Nytt konto-/kreditkort",
+            "match": {
+              "location": "MatchiTestSteps.i_choose_Nytt_konto_kreditkort()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2770088516,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I enter card details \"2223000048410010\" ,\"Mjukvaru Testare\", \"10\", \"2020\", \"737\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2223000048410010",
+                  "offset": 22
+                },
+                {
+                  "val": "Mjukvaru Testare",
+                  "offset": 42
+                },
+                {
+                  "val": "10",
+                  "offset": 62
+                },
+                {
+                  "val": "2020",
+                  "offset": 68
+                },
+                {
+                  "val": "737",
+                  "offset": 76
+                }
+              ],
+              "location": "MatchiTestSteps.i_enter_card_details(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5808146377,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I can finalize my booking",
+            "match": {
+              "location": "MatchiTestSteps.i_can_finalize_my_booking()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Payment",
+        "description": "",
+        "id": "as-a-customer-i-want-to-be-able-choose-different-payment-methods-for-my-booking.;payment;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8701360537,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am logged in to Matchi",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1426415012,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "have chosen a sport hall",
+            "match": {
+              "location": "MatchiTestSteps.have_chosen_a_sport_hall()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18124,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "chosen a specific court",
+            "match": {
+              "location": "MatchiTestSteps.chosen_a_specific_court()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225733177,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "chosen a specific time",
+            "match": {
+              "location": "MatchiTestSteps.chosen_a_specific_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1288930733,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I choose Nytt konto-/kreditkort",
+            "match": {
+              "location": "MatchiTestSteps.i_choose_Nytt_konto_kreditkort()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2864750621,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I enter card details \"2223000048410010\" ,\"Mjukvaru Testare\", \"10\", \"2020\", \"562\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2223000048410010",
+                  "offset": 22
+                },
+                {
+                  "val": "Mjukvaru Testare",
+                  "offset": 42
+                },
+                {
+                  "val": "10",
+                  "offset": 62
+                },
+                {
+                  "val": "2020",
+                  "offset": 68
+                },
+                {
+                  "val": "562",
+                  "offset": 76
+                }
+              ],
+              "location": "MatchiTestSteps.i_enter_card_details(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1977398402,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I can finalize my booking",
+            "match": {
+              "location": "MatchiTestSteps.i_can_finalize_my_booking()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a customer I want to be able choose different payment methods for my booking.",
+    "description": "",
+    "id": "as-a-customer-i-want-to-be-able-choose-different-payment-methods-for-my-booking.",
+    "keyword": "Feature",
+    "uri": "ProjektMatchi/ProjektMatchi/PaymentMethodMatchi.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 19,
+        "name": "Search for Sport Halls",
+        "description": "",
+        "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8619999086,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am logged in to Matchi",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2597001028,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter the \"Hönö\" of a Sport Hall",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hönö",
+                  "offset": 13
+                }
+              ],
+              "location": "MatchiTestSteps.i_enter_the_of_a_Sport_Hall(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5723407847,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "As I click the name of the Sport Hall",
+            "match": {
+              "location": "MatchiTestSteps.as_I_click_the_name_of_the_Sport_Hall()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 810662197,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I Can click \"Hönö\" of Sport Hall for booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hönö",
+                  "offset": 13
+                }
+              ],
+              "location": "MatchiTestSteps.i_Can_click_of_Sport_Hall_for_booking(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Search for Sport Halls",
+        "description": "",
+        "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it;search-for-sport-halls;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9309559095,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am logged in to Matchi",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2493485036,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enter the \"Stenungsund\" of a Sport Hall",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Stenungsund",
+                  "offset": 13
+                }
+              ],
+              "location": "MatchiTestSteps.i_enter_the_of_a_Sport_Hall(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5296055680,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "As I click the name of the Sport Hall",
+            "match": {
+              "location": "MatchiTestSteps.as_I_click_the_name_of_the_Sport_Hall()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 863323367,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I Can click \"Stenungsund\" of Sport Hall for booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Stenungsund",
+                  "offset": 13
+                }
+              ],
+              "location": "MatchiTestSteps.i_Can_click_of_Sport_Hall_for_booking(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a customer i want to search for a sport hall so that i can book it",
+    "description": "",
+    "id": "as-a-customer-i-want-to-search-for-a-sport-hall-so-that-i-can-book-it",
+    "keyword": "Feature",
+    "uri": "ProjektMatchi/ProjektMatchi/SearchMatchiNew.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "search for a sportshall and check for available times",
+        "description": "",
+        "id": "as-a-customer-i-want-to-select-a-date-and-a-time-for-the-sport-activity;search-for-a-sportshall-and-check-for-available-times",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13094203722,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in to Matchi",
+            "match": {
+              "location": "MatchiTestSteps.i_am_logged_in_to_Matchi()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2166335969,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I select boka",
+            "match": {
+              "location": "MatchiTestSteps.i_select_boka()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 468622106,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search for \"Höno\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Höno",
+                  "offset": 14
+                }
+              ],
+              "location": "MatchiTestSteps.i_search_for(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1239380073,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click a time",
+            "match": {
+              "location": "MatchiTestSteps.i_click_a_time()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 818486045,
+>>>>>>> branch 'master' of https://github.com/MackanMackan/ProjektMatchi.git
               "status": "passed"
             },
             "line": 8,

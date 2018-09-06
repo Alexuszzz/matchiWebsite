@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="208.020119">
 <testcase classname="Book courts by week schedual" name="I book a court in the week view, at a later date" time="33.665873">
 <system-out><![CDATA[Given I am logged in to Matchi..............................................passed
@@ -55,6 +56,81 @@ Then Can choose the clicked Sport Hall for booking..........................pass
 ]]></system-out>
 </testcase>
 <testcase classname="As a customer I want to select a date and a time for the sport activity" name="search for a sportshall and check for available times" time="20.942135">
+=======
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="173.632599">
+<testcase classname="Book courts by week schedual" name="I book a court in the week view, at a later date" time="20.209156">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................passed
+When I search for available courts..........................................passed
+And Click visa vecka........................................................passed
+And I click a time later in the week........................................passed
+And I click book............................................................passed
+Then I can book a court.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As customer I want to be able to book one or several courts." name="Book a court." time="19.636797">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................passed
+When I search for available courts..........................................passed
+And chosen a specific time..................................................passed
+And I click book............................................................passed
+Then I can book a court.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As customer I want to be able to book one or several courts." name="Book several courts" time="32.96585">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................passed
+When I search for available courts..........................................passed
+And click on the Boka flera button..........................................passed
+And choose three court times................................................passed
+And I click book............................................................passed
+Then I can book more than one court.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a customer I want to log in to be able to get access to the bookingsystem" name="Log in to Machi website" time="10.048631">
+<system-out><![CDATA[Given I am on the Machi site................................................passed
+And I have not logged in....................................................passed
+When I use username "mjukvarutestare4@mailinator.com" and password "mjukvarutestare".passed
+And I click the log in button...............................................passed
+Then I am logged in.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a customer I want to be able choose different payment methods for my booking." name="Payment" time="20.787037">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................passed
+And chosen a specific court.................................................passed
+And chosen a specific time..................................................passed
+When I choose Nytt konto-/kreditkort........................................passed
+And I enter card details "2223000048410010" ,"Mjukvaru Testare", "10", "2020", "737".passed
+Then I can finalize my booking..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a customer I want to be able choose different payment methods for my booking." name="Payment_2" time="16.484607">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+And have chosen a sport hall................................................passed
+And chosen a specific court.................................................passed
+And chosen a specific time..................................................passed
+When I choose Nytt konto-/kreditkort........................................passed
+And I enter card details "2223000048410010" ,"Mjukvaru Testare", "10", "2020", "562".passed
+Then I can finalize my booking..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a customer i want to search for a sport hall so that i can book it" name="Search for Sport Halls" time="17.75107">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+When I enter the "Hönö" of a Sport Hall.....................................passed
+And As I click the name of the Sport Hall...................................passed
+Then I Can click "Hönö" of Sport Hall for booking...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a customer i want to search for a sport hall so that i can book it" name="Search for Sport Halls 2" time="17.962423">
+<system-out><![CDATA[Given I am logged in to Matchi..............................................passed
+When I enter the "Stenungsund" of a Sport Hall..............................passed
+And As I click the name of the Sport Hall...................................passed
+Then I Can click "Stenungsund" of Sport Hall for booking....................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a customer I want to select a date and a time for the sport activity" name="search for a sportshall and check for available times" time="17.787028">
+>>>>>>> branch 'master' of https://github.com/MackanMackan/ProjektMatchi.git
 <system-out><![CDATA[Given I am logged in to Matchi..............................................passed
 When I select boka..........................................................passed
 And I search for "Höno".....................................................passed
