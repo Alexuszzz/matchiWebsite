@@ -217,6 +217,7 @@ public class MatchiTestSteps {
 	}
 
 
+
 	@Then("^I can finalize my booking$")
 	public void i_can_finalize_my_booking() throws Throwable {
 		
@@ -229,21 +230,47 @@ public class MatchiTestSteps {
 			stm.quitWebDriver();
 		
 		}
-		
+		/*
 		else if(stm.getTextByXpath("//*[@id=\"userBookingModal\"]/div[1]/div/div[2]").contains("Ett problem upptäcktes")) {
 			stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");			
 			stm.quitWebDriver();
 			System.out.println("Wrong CVC nr, booking faild");
 		}
-		
+		*/
 		else {
 			throw new Exception();
 		}
 		
+		}
+		
+		@When("^I enter card details with wrong CVC \"([^\"]*)\" ,\"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
+		public void i_enter_card_details_with_wrong_CVC(String arg1, String arg2, String arg3, String arg4, String arg5) throws Throwable {
+			stm.enterSearchTextXpath(arg1, "//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[1]/div/input");
+			stm.enterSearchTextXpath(arg2, "//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[2]/input");
+			stm.clickByXPath("//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[3]/select/option["+(Integer.parseInt(arg3)+1)+"]");
+			stm.selectYear(arg4);	
+			stm.enterSearchTextXpath(arg5,"//*[@id=\"adyen-encrypted-form\"]/div[1]/div/div/div[2]/div[5]/div/input");
+			stm.clickByXPath("//*[@id=\"adyen-encrypted-form\"]/div[2]/input");	
+			
+		
+		}
 		
 		
-		
+		@Then("^My booking wont pass$")
+		public void my_booking_wont_pass() throws Throwable {
+			if(stm.getTextByXpath("//*[@id=\"userBookingModal\"]/div[1]/div/div[2]/h1").contains("Ett problem upptäcktes")) {
+				stm.clickByXPath("//*[@id=\"userBookingModal\"]/div[1]/div/div[3]/a");				
+				stm.quitWebDriver();
+				System.out.println("Wrong CVC nr, booking faild");
+			}
+			
+			else {
+				throw new Exception();
+		}
+			
 	}
+	
+	//user story Book by weeek
 	@When("^Click visa vecka$")
 	public void click_visa_vecka() throws Throwable {
 	    stm.clickByXPath("//*[@id=\"schedule\"]/div/div/div[1]/div[2]/div[2]/a[2]");
